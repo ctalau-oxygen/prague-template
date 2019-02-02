@@ -10,6 +10,7 @@ echo "<h1>XML Prague 2019 Paper Draft</h1>" > out/index.html
 
 REPO=`echo $REPOSITORY_URL | cut -d '/' -f 5`
 USER=`echo $REPOSITORY_URL | cut -d '/' -f 4`
+CLEAN_REPO_URL=`echo $REPOSITORY_URL | sed  's/x-access-token:.*@//g'`
 
 for file in `ls *.xml`;
 do
@@ -20,6 +21,6 @@ do
    echo "<ul>"
    echo "<li><a href='${file%.*}.pdf'>View generated PDF version</a>" >> out/index.html
    echo "<li><a href='${EDIT_URL}'>Edit Docbook source</a>" >> out/index.html
-   echo "<li><a href='${REPOSITORY_URL}'>View on GitHub</a>" >> out/index.html
+   echo "<li><a href='${CLEAN_REPO_URL}'>View on GitHub</a>" >> out/index.html
    echo "</ul>"
 done
