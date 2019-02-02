@@ -20,9 +20,7 @@ do
     -css frameworks/docbook/css/docbook.css \
     -out "out/${file%.*}.pdf"
    EDIT_URL="https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252F${USER}%252F${REPO}%252F${BRANCH}%252F${file}"
-   echo "<ul>"
    echo "<li><a href='${file%.*}.pdf'>View generated PDF version</a>" >> out/index.html
    echo "<li><a href='${EDIT_URL}'>Edit Docbook source</a>" >> out/index.html
    echo "<li><a href='${CLEAN_REPO_URL}'>View on GitHub</a>" >> out/index.html
-   echo "</ul>"
 done
