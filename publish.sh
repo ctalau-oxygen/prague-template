@@ -3,8 +3,7 @@ SLUG=`echo $REPOSITORY_URL | sed 's/git@github.com://' | sed 's/https:\/\/.*gith
 echo "Slug: $SLUG"
 USER=`echo $SLUG | cut -d '/' -f 1`
 REPO=`echo $SLUG | cut -d '/' -f 2`
-CLEAN_REPO_URL=`https://github.com/$USER/$REPO`
-
+CLEAN_REPO_URL="https://github.com/$USER/$REPO"
 
 wget https://www.oxygenxml.com/InstData/Chemistry/oxygen-pdf-chemistry.zip
 unzip oxygen-pdf-chemistry.zip
