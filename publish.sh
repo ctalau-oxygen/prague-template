@@ -9,8 +9,8 @@ mkdir -p out
 echo "<h1>XML Prague 2019 Paper Draft</h1>" > out/index.html
 
 SLUG=`echo $REPOSITORY_URL | | sed 's/git@github.com://' | sed 's/https:\/\/.*github.com\///'`
-USER=`echo $REPOSITORY_URL | cut -d '/' -f 1`
-REPO=`echo $REPOSITORY_URL | cut -d '/' -f 2`
+USER=`echo $SLUG | cut -d '/' -f 1`
+REPO=`echo $SLUG | cut -d '/' -f 2`
 CLEAN_REPO_URL=`https://github.com/$USER/$REPO`
 
 for file in `ls *.xml`;
