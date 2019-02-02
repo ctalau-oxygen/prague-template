@@ -8,6 +8,7 @@ unzip frameworks-20.1.0.3.zip -d frameworks/
 mkdir -p out
 echo "<h1>XML Prague 2019 Paper Draft</h1>" > out/index.html
 
+echo "Using REPOSITORY_URL " $REPOSITORY_URL 
 SLUG=`echo $REPOSITORY_URL | | sed 's/git@github.com://' | sed 's/https:\/\/.*github.com\///'`
 USER=`echo $SLUG | cut -d '/' -f 1`
 REPO=`echo $SLUG | cut -d '/' -f 2`
