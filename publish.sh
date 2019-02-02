@@ -14,4 +14,4 @@ do
     -css frameworks/docbook/css/docbook.css \
     -out "out/${file%.*}.pdf"
    echo "<a href='${file%.*}.pdf'>${file}</a>" >> out/index.html
-done'
+done
