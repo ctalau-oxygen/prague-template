@@ -1,6 +1,10 @@
 # prague-template
 XML Prague paper template
 
-Edit link: https://www.oxygenxml.com/oxygen-xml-web-author/app/oxygen.html?url=gitgh%3A%2F%2Fhttps%253A%252F%252Fgithub.com%252Fctalau-oxygen%252Fprague-template%2Fmaster%2Fpaper.xml
+This repository contains a template paper for XML Prague 2019 conference: [paper.xml](paper.xml). Original version and more information can be found here: http://www.xmlprague.cz/instructions-for-authors/ .
 
-Output: https://5c55a60ca538220661d22912--stupefied-booth-abdb51.netlify.com/paper.pdf
+This repository auto-generates a PDF version of the paper every time the XML source is edited. The published Web page provides a link that opens the paper in Oxygen XML Web Author for editing.
+
+If you want to replicate this setup, click the button below:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ctalau-oxygen/prague-template)
