@@ -25,3 +25,4 @@ do
    echo "<li><a href='${EDIT_URL}'>Edit Docbook source</a>" >> out/index.html
    echo "<li><a href='${CLEAN_REPO_URL}'>View on GitHub</a>" >> out/index.html
 done
+echo $INCOMING_HOOK_BODY > out/content.html
